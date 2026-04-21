@@ -1,7 +1,7 @@
 import React from "react";
 import { useGLTF } from "@react-three/drei";
 
-const Computers = ({ isMobile }) => {
+const Computers = (props) => {
   // Point to the folder where scene.gltf, scene.bin, and textures/ are located
   const { scene } = useGLTF("/desktop_pc/scene.gltf");
 
@@ -20,9 +20,9 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [1.9, -2.25, -1.5]}
-        rotation={[0.3, -1.5, 0.1]}
+        scale={props.scale || 0.75}
+        position={props.position || [1.9, -2.25, -1.5]}
+        rotation={props.rotation || [0.3, -1.5, 0.1]}
       />
     </mesh>
   );

@@ -58,10 +58,9 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
-    subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
+    title: 'Lost & Found AI - Smart Item Verification System',
+    desc: 'Lost & Found AI is a data-driven platform that enhances lost item recovery through AI-based image processing and intelligent description generation. It enables efficient matching between found items and user-reported data using a scoring mechanism.',
+    subdesc: 'Developed with Django, React, and MySQL, the system integrates backend processing, database management, and matching algorithms to deliver a secure, scalable, and real-world problem-solving solution.',
     href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
     texture: '/textures/project/project1.mp4',
     logo: '/assets/project-logo1.png',
@@ -87,18 +86,14 @@ export const myProjects = [
         name: 'TypeScript',
         path: '/assets/typescript.png',
       },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
+      
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-    subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
+   title: 'CampusFlow - Real-Time Bus Tracking System',
+desc: 'CampusFlow Bus Tracking is an intelligent web-based system that provides real-time monitoring of campus transportation. It enables students to track live bus locations, view routes, and receive instant updates, ensuring a seamless and reliable commuting experience across the campus.',
+subdesc:
+  'With CampusFlow, users can eliminate uncertainty in transportation through accurate GPS-based tracking, real-time notifications, and dynamic route management. Built with modern web technologies and real-time database integration, it ensures efficient communication between students and transport administrators without delays.',
     href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
     texture: '/textures/project/project2.mp4',
     logo: '/assets/project-logo2.png',
@@ -171,10 +166,10 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-    subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
+    title: 'TurfPro - Intelligent Turf Booking Platform',
+desc: 'TurfPro is a full-stack web application that automates turf reservations and streamlines booking operations. It allows users to check availability, book slots in real time, and provides administrators with powerful tools for managing schedules and transactions.',
+subdesc:
+  'Developed using Django, React, and MySQL, the platform features real-time updates, dynamic dashboards, and efficient backend systems to enhance user experience and optimize booking management processes.',
     href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
     texture: '/textures/project/project4.mp4',
     logo: '/assets/project-logo4.png',
@@ -208,10 +203,10 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-    subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
+    title: 'EduShare - Intelligent Academic Resource Hub',
+desc: 'EduShare is a full-stack platform designed to streamline the sharing and management of college notes and academic resources. It enables students to easily upload, browse, and access study materials categorized by subjects and courses.',
+subdesc:
+  'Built with Django, React, and MySQL, the system offers efficient data organization, secure file handling, and responsive dashboards, improving collaboration and accessibility of academic content across the campus.',
     href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
     texture: '/textures/project/project5.mp4',
     logo: '/assets/project-logo5.png',
@@ -248,12 +243,12 @@ export const myProjects = [
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
-    deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
-    deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-    cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
-    targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
+    deskScale: isSmall ? 0.5 : isMobile ? 0.6 : isTablet ? 0.65 : 0.75,
+    deskPosition: isSmall ? [0.2, -3.5, -2.5] : isMobile ? [0.2, -3.0, -2.2] : isTablet ? [1.2, -2.5, -1.8] : [1.9, -2.25, -1.5],
+    cubePosition: isSmall ? [4, -4, 0] : isMobile ? [5, -4.5, 0] : isTablet ? [6, -5, 0] : [9, -5.5, 0],
+    reactLogoPosition: isSmall ? [3, 2.5, 0] : isMobile ? [4, 3, 0] : isTablet ? [6, 4, 0] : [8, 3, 0],
+    ringPosition: isSmall ? [-4, 3.5, 0] : isMobile ? [-6, 4, 0] : isTablet ? [-8, 6, 0] : [-15, 7, 0],
+    targetPosition: isSmall ? [-4, -7, -10] : isMobile ? [-6, -7, -10] : isTablet ? [-8, -7, -10] : [-11, -9, -10],
   };
 };
 

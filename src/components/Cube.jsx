@@ -40,7 +40,8 @@ const Cube = ({ ...props }) => {
           receiveShadow
           geometry={nodes.Cube.geometry}
           material={nodes.Cube.material}
-          onPointerEnter={() => setHovered(true)}>
+          onPointerEnter={() => setHovered(true)}
+          onPointerOut={() => setHovered(false)}>
           <meshMatcapMaterial matcap={texture} toneMapped={false} />
         </mesh>
       </group>
@@ -49,5 +50,6 @@ const Cube = ({ ...props }) => {
 };
 
 useGLTF.preload('models/cube.glb');
+useTexture.preload('textures/cube.png');
 
 export default Cube;

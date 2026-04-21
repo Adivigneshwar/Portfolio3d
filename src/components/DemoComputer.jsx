@@ -11,7 +11,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 const DemoComputer =(props) =>{
   const group = useRef()
   const { animations } = useGLTF('/models/computer.glb')
-  const txt = useVideoTexture(props.texture ? props.texture : "/textures/project/project1.mp4");
+  const txt = useVideoTexture(props.texture || "/textures/project/project1.mp4");
   const { actions } = useAnimations(animations, group)
   const { nodes, materials } = useGLTF("/models/computer.glb");
 
@@ -31,7 +31,7 @@ useEffect(() => {
         ease: "power3.out",
       });
     },
-    txt
+    props.texture
   );
   return (
     <group ref={group} {...props} dispose={null}>
